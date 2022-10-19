@@ -116,8 +116,9 @@ font-size: 0.8rem;
     background-color: #c1c1c1;
     height: 100%;
     border-radius: 2px;
+    width: 20%;
 }
 
-#time-bar .bar-now{
-    width: 15%;
+.side-controls .bar-tot{
+    width: 120px;
 }
