@@ -1,0 +1,32 @@
+.dark-till-hover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#track-name .dark-till-hover:hover{
+    text-decoration: underline;
+}
+
+#controls i:hover{
+    cursor: pointer;
+}
+
+.bar-now:hover{
+    background-color: #90d32c;
+    cursor: pointer;
+    position: relative;
+}
+
+.bar-now:hover .bar-pointer{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #fff;
+    position: absolute;
+    right: -7px;
+    top:-5px;
+}

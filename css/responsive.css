@@ -1,0 +1,10 @@
+@media all and (max-width:750px){
+    #track-icon img{
+        width: 35%;
+        min-width: 28px;
+    }
+    
+    #folder-favourites div{
+        display: block;
+    }
+}

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+img{
+    max-width: 100%;
+}
+
+#main-container{
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - 90px);
+    overflow: auto;
+}
+
+.dark-till-hover{
+    opacity: 0.5;
+}
+
+/* control bar rules */
+#controls{
+    height: 90px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 230px;
+}
+
+#track-icon{
+    display: flex;
+    align-items: center; 
+}
+
+#track-icon img{
+    max-width: 43px;
+}
+
+#track-name{
+margin-left: 10px;
+font-size: 0.8rem;
+}
+
+#track-name .dark-till-hover{
+    font-size: 0.7rem;
+}
+
+#folder-favourites div{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#main-controls{
+    width: 38%;
+    min-width: 226px;
+    text-align: center;
+}
+
+#track-controls{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#track-controls i{
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#track-controls #play{
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: all 0.1s linear;
+}
+
+#time-bar{
+    font-size: 0.6rem;
+}
+
+#time-bar > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bar-tot{
+    background-color: #5a5a5a;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#time-bar .bar-tot{
+    width: 70%;
+    margin: 0 10px;
+}
+
+.bar-now{
+    background-color: #c1c1c1;
+    height: 100%;
+    border-radius: 2px;
+}
+
+#time-bar .bar-now{
+    width: 15%;
+}
