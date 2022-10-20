@@ -1,4 +1,4 @@
-.dark-till-hover:hover{
+.dark-till-hover:hover, .less-dark-till-hover:hover{
     opacity: 1;
     cursor: pointer;
 }
@@ -16,17 +16,15 @@
     cursor: pointer;
 }
 
-.bar-now:hover{
-    background-color: #90d32c;
+.bar-tot:hover{
     cursor: pointer;
+}
+
+.bar-tot:hover .bar-now{
+    background-color: var(--green);
     position: relative;
 }
 
-.bar-now:hover .bar-pointer{
-    padding: 7px;
-    border-radius: 7px;
-    background-color: #fff;
-    position: absolute;
-    right: -7px;
-    top:-5px;
+.bar-tot:hover .bar-pointer{
+    display: block;
 }
