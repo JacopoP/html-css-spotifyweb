@@ -28,3 +28,11 @@
 .bar-tot:hover .bar-pointer{
     display: block;
 }
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .img-container .rollhover{
+    display: block;
+}

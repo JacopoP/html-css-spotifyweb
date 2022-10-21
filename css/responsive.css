@@ -1,3 +1,9 @@
+@media all and (max-width:1190px) {
+    .card{
+        width: calc((100% - 39px) / 4);
+    }
+}
+
 @media all and (max-width:750px){
     #track-icon img{
         width: 35%;
@@ -10,6 +16,10 @@
 
     .side-controls .bar-tot{
         width: 45%;
+    }
+
+    .card{
+        width: calc((100% - 13px) / 2);
     }
 }
 
