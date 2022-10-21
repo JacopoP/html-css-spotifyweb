@@ -1,0 +1,391 @@
+/* general rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #90d32c;
+    --grey: rgba(255, 255, 255, .5);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 13.5px;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.greenbar{
+    background-color: var(--green);
+    border-radius: 5px;
+}
+
+.dark-till-hover{
+    opacity: 0.5;
+}
+
+.less-dark-till-hover{
+    opacity: 0.85;
+}
+
+/* main part rules */
+#main-container{
+    display: flex;
+    flex-wrap: nowrap;
+    height: calc(100vh - 90px);
+    overflow: auto;
+    position: relative;
+}
+
+
+/* side bar rules */
+#side-bar{
+    flex-shrink: 0;
+    background-color: #000;
+    color: #fff;
+    width: 230px;
+    height: 100%;
+    padding: 18px 18px 3px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#side-bar > *{
+    width: fit-content;
+}
+
+/* logo rules */
+#logo{
+    height: 72px;
+    flex-shrink: 0;
+}
+
+#logo-big{
+    width: 135px;
+}
+
+#logo-small{
+    width: 30px;
+    display: none;
+}
+
+/* side navigator rules */
+.side-option img{
+    width: 30px;
+}
+
+.side-option span{
+    vertical-align: top;
+    line-height: 30px;
+}
+
+.side-option.less-dark-till-hover{
+    position: relative;
+}
+
+#side-bar .greenbar{
+    height: 40px;
+    width: 4px;
+    position: absolute;
+    left: -18px;
+    top: -5px;
+}
+
+/* playlist rules */
+#side-bar h3{
+    margin: 15px 0;
+}
+
+#add{
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    font-size: 45px;
+    vertical-align: middle;
+}
+
+#side-bar ul{
+    overflow-y: auto;
+    width: 100%;
+    min-height: 40px;
+}
+
+#side-bar li{
+    margin: 15px 0;
+    width: fit-content;
+}
+
+/* foot sidebar rules */
+#download{
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+#download img{
+    width: 19px;
+    vertical-align: middle;
+}
+
+#side-bar hr{
+    border-color: var(--grey);
+    width: 100%;
+    margin: 5px 0;
+}
+
+#user{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#user img{
+    width: 23px;
+    vertical-align: middle;
+    background-color: var(--grey);
+    border-radius: 50%;
+    margin-right: 2px;
+}
+/* end sidebar rules */
+
+/* call to action rules */
+#cta{
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 230px);
+    z-index: 100;
+}
+
+#upgrade{
+    border: 1px solid #fff;
+    padding: 10px 45px;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 25px;
+    width: fit-content;
+    transition: all 0.1s linear;
+}
+
+/* album selection rules */
+#album-selection{
+    flex-grow: 1;
+    min-width: 100px;
+    height: 100%;
+    background-color: #141922;
+    overflow: auto;
+}
+
+/* top options rules */
+#top-options{
+    margin-top: 110px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 35px;
+    flex-wrap: wrap;
+}
+
+#top-options *{
+    width: max-content;
+    height: 20px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+#top-options .greenbar{
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* cards section rules */
+#card-wrapper{
+    padding: 0 30px 0 20px;
+}
+
+#card-wrapper h2{
+    font-size: 2rem;
+    margin-top: 32px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 13px;
+    margin-top: 28px;
+    overflow-x: auto;
+}
+
+.card{
+    width: calc((100% - 65px) / 6);
+    text-align: center;
+    max-width: 250px;
+    min-width: 180px;
+}
+
+.card h4{
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+}
+
+#card-wrapper h6{
+    color: var(--grey);
+    font-size: 0.9rem;
+}
+
+#card-wrapper > h6{
+    margin-top: 10px;
+}
+
+.card-container:last-child .img-container{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-container{
+    position: relative;
+}
+
+.img-container .rollhover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 60px;
+    display: none;
+}
+
+.img-container .rollhover *{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* end album selection rules */
+
+/* control bar rules */
+#controls{
+    height: 90px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* controls side rules */
+.side-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 230px;
+    font-size: 1.1em;
+}
+
+#track-icon{
+    display: flex;
+    align-items: center; 
+}
+
+#track-icon img{
+    max-width: 43px;
+}
+
+#track-name{
+margin-left: 10px;
+font-size: 0.9rem;
+}
+
+#track-name .dark-till-hover{
+    font-size: 0.8rem;
+}
+
+#folder-favourites div{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.side-controls .bar-tot{
+    width: 120px;
+}
+
+/* center part controls rules */
+#main-controls{
+    width: 38%;
+    min-width: 226px;
+    text-align: center;
+}
+
+#track-controls{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+#track-controls i{
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#track-controls #play{
+    font-size: 2.2rem;
+    margin: 0 15px;
+    transition: all 0.1s linear;
+}
+
+#time-bar{
+    font-size: 0.7rem;
+}
+
+#time-bar > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bar-tot{
+    background-color: #5a5a5a;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.bar-pointer{
+    display: none;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #fff;
+    position: absolute;
+    right: -7px;
+    top:-5px;
+}
+
+#time-bar .bar-tot{
+    width: 70%;
+    margin: 0 10px;
+}
+
+.bar-now{
+    background-color: #c1c1c1;
+    height: 100%;
+    border-radius: 2px;
+    width: 20%;
+}

@@ -1,0 +1,38 @@
+.dark-till-hover:hover, .less-dark-till-hover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#track-name .dark-till-hover:hover{
+    text-decoration: underline;
+}
+
+#controls i:hover{
+    cursor: pointer;
+}
+
+.bar-tot:hover{
+    cursor: pointer;
+}
+
+.bar-tot:hover .bar-now{
+    background-color: var(--green);
+    position: relative;
+}
+
+.bar-tot:hover .bar-pointer{
+    display: block;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .img-container .rollhover{
+    display: block;
+}

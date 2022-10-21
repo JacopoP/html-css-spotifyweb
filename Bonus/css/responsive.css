@@ -1,0 +1,117 @@
+@media all and (max-width:750px){
+    #track-icon img{
+        width: 35%;
+        min-width: 28px;
+    }
+    
+    #folder-favourites div{
+        display: block;
+    }
+
+    .side-controls .bar-tot{
+        width: 45%;
+    }
+}
+
+@media all and (max-width:550px) {
+    #cta{
+        width: calc(100% - 50px);
+    }
+
+    #side-bar{
+        width: 50px;
+        height: 100%;
+        padding: 4px 10px 5px;
+        flex-shrink: 0;
+    }
+
+    #logo{
+        height: 40px;
+    }
+
+    #logo-big{
+        display: none;
+    }
+
+    #logo-small{
+        display: block;
+    }
+
+    .no-responsive{
+        display: none;
+    }
+
+    #download{
+        text-align: center;
+        width: 100%;
+    }
+
+    #user{
+        margin-top: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width:510px) {
+    #track-icon img{
+        display: none;
+    }
+
+    .side-controls:first-child{
+        flex-shrink: 1.7;
+    }
+}
+
+@media all and (max-width:480px) {
+    .side-controls .bar-tot{
+        display: none;
+    }
+    .side-controls:last-child{
+        flex-shrink: 2;
+    }
+}
+
+@media all and (max-width:410px) {
+    .side-controls i:first-child, .side-controls i:nth-child(2){
+        display: none;
+    }
+
+    .side-controls:last-child{
+        justify-content: flex-end;
+    }
+
+    .side-controls{
+        padding: 0 2%;
+        flex-shrink: 2;
+    }
+
+    #main-controls{
+        min-width:180px;
+    }
+
+    #track-controls i{
+        margin: 0 5px;
+        vertical-align: middle;
+    }
+
+    #time-bar .time{
+        display: none;
+    }
+
+    #time-bar .bar-tot{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media all and (max-height:250px) {
+    #cta{
+        display: none;
+    }
+    
+    #top-options{
+        margin-top: 20px;
+    }
+}
