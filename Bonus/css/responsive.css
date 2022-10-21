@@ -52,9 +52,6 @@
         width: 100%;
     }
 
-}
-
-@media all and (max-width:510px) {
     #track-icon img{
         display: none;
     }
@@ -62,9 +59,7 @@
     .side-controls:first-child{
         flex-shrink: 1.7;
     }
-}
 
-@media all and (max-width:480px) {
     .side-controls .bar-tot{
         display: none;
     }

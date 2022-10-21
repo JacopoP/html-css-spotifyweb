@@ -33,6 +33,10 @@
     cursor: pointer;
 }
 
+.card:hover .img-container img{
+    opacity: 0.4;
+}
+
 .card:hover .img-container .rollhover{
-    display: block;
+    opacity: 1;
 }
