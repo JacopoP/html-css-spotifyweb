@@ -1,3 +1,4 @@
+/* general rules */
 *{
     margin: 0;
     padding: 0;
@@ -10,12 +11,6 @@
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 13.5px;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
 }
 
 li{
@@ -39,19 +34,15 @@ img{
     opacity: 0.85;
 }
 
+/* main part rules */
 #main-container{
     display: flex;
     flex-wrap: nowrap;
     height: calc(100vh - 90px);
     overflow: auto;
-}
-
-/* main part rules */
-#main-container{
-    display: flex;
-    height: calc(100vh - 90px);
     position: relative;
 }
+
 
 /* side bar rules */
 #side-bar{
@@ -70,6 +61,7 @@ img{
     width: fit-content;
 }
 
+/* logo rules */
 #logo{
     height: 72px;
     flex-shrink: 0;
@@ -84,6 +76,7 @@ img{
     display: none;
 }
 
+/* side navigator rules */
 .side-option img{
     width: 30px;
 }
@@ -105,6 +98,7 @@ img{
     top: -5px;
 }
 
+/* playlist rules */
 #side-bar h3{
     margin: 15px 0;
 }
@@ -132,6 +126,7 @@ img{
     width: fit-content;
 }
 
+/* foot sidebar rules */
 #download{
     margin-top: auto;
     font-size: 0.9rem;
@@ -160,17 +155,9 @@ img{
     border-radius: 50%;
     margin-right: 2px;
 }
+/* end sidebar rules */
 
-/* album selection rules */
-#album-selection{
-    flex-grow: 1;
-    min-width: 255px;
-    height: 100%;
-    background-color: #141922;
-    overflow: auto;
-}
-
-/* call to action */
+/* call to action rules */
 #cta{
     background-color: rgba(0, 0, 0, .7);
     width: 100%;
@@ -192,6 +179,15 @@ img{
     margin-top: 25px;
     width: fit-content;
     transition: all 0.1s linear;
+}
+
+/* album selection rules */
+#album-selection{
+    flex-grow: 1;
+    min-width: 100px;
+    height: 100%;
+    background-color: #141922;
+    overflow: auto;
 }
 
 /* top options rules */
@@ -275,7 +271,6 @@ img{
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, .6);
-    text-align: center;
     font-size: 60px;
     display: none;
 }
@@ -285,6 +280,7 @@ img{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+/* end album selection rules */
 
 /* control bar rules */
 #controls{
@@ -295,7 +291,7 @@ img{
     align-items: center;
 }
 
-/* constrols side rules */
+/* controls side rules */
 .side-controls{
     display: flex;
     align-items: center;
